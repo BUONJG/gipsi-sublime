@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$iQuery->innerjoin(${1:\$db}, ${2:\$tbl}, '${3:ALIAS}');
+\$iQuery->on("${4:On Condition}");
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>qInnerJoin</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

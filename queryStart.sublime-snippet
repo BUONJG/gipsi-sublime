@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\$iQuery = gdb(${1:\$db}, ${2:\$tbl})->query('${3:select}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>qStart</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
