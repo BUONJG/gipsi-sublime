@@ -1,0 +1,5 @@
+[
+     { "command": "executelocal", "caption": "Cli Execution (Local)" }, 
+
+     { "command": "executeprod", "caption": "Cli Execution (Prod)"  }
+]
