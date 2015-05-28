@@ -1,5 +1,10 @@
 [
-     { "command": "cliexecution", "caption": "Cli Execution (Local)", "args": { "config": "default"}   }, 
+	{ "caption": "-"            ,  "id": "separator"  },
+    { "caption": "CLI Execution",
+       "children": [
+       	{ "command": "cliexecution", "caption": "Local" , "args": { "config": "default"}   }, 
+    	{ "command": "cliexecution", "caption": "Prod"  , "args": { "config": "PROD"}  }]
+    }, 
+    { "caption": "Code Delivery", "command": "codedelivery"}
 
-     { "command": "cliexecution", "caption": "Cli Execution (Prod)"  , "args": { "config": "PROD"}  }
 ]
