@@ -1,5 +1,5 @@
 [
-     { "command": "executelocal", "caption": "Cli Execution (Local)" }, 
+     { "command": "cliexecution", "caption": "Cli Execution (Local)", "args": { "config": "default"}   }, 
 
-     { "command": "executeprod", "caption": "Cli Execution (Prod)"  }
+     { "command": "cliexecution", "caption": "Cli Execution (Prod)"  , "args": { "config": "PROD"}  }
 ]
