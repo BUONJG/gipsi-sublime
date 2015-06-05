@@ -8,4 +8,4 @@ class cliexecutionCommand(sublime_plugin.TextCommand):
 			drive       = fichier_cli.split(":", 1)[0]
 			gipsi_path  = fichier_cli.split("cli\\", 1)[0]+"cli"
 			phpFile     = fichier_cli.split("cli\\", 1)[1]
-			os.system(drive+": & cd  "+gipsi_path+" & php.exe -c ../php.ini "+phpFile+" --email=0 --config="+config+" & pause")
+			os.system(drive+": & cd  "+gipsi_path+" & start php.exe -c ../php.ini "+phpFile+" --email=0 --config="+config)

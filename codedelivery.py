@@ -7,4 +7,4 @@ class codedeliveryCommand(sublime_plugin.TextCommand):
 		else:
 			drive       = fichier_cli.split(":", 1)[0]
 			gipsi_path  = fichier_cli.split("aperam\\", 1)[0]+"aperam\\cli"
-			os.system(drive+": & cd  "+gipsi_path+" & php.exe -c ../php.ini ../wwwroot/page.php --include=batch --page_plugin=CodeDelivery --page=start --config=CodeDelivery")
+			os.system(drive+": & cd  "+gipsi_path+" & start php.exe -c ../php.ini ../wwwroot/page.php --include=batch --page_plugin=CodeDelivery --page=start --config=CodeDelivery")
