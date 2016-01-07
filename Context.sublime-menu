@@ -1,5 +1,6 @@
 [
-	{ "caption": "-"            ,  "id": "separator"  },
+	{ "caption": "-"            ,  "id": "separator"  }, 
+    { "caption": "Open Terminal", "command": "terminal"},
     { "caption": "CLI Execution",
        "children": [
        	{ "command": "cliexecution", "caption": "Local" , "args": { "config": "default"}   }, 
