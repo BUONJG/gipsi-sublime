@@ -5,8 +5,11 @@
        "children": [
        	{ "command": "cliexecution", "caption": "Local" , "args": { "config": "default"}   }, 
     	{ "command": "cliexecution", "caption": "Prod"  , "args": { "config": "PROD"}  }]
+    }, 
+    { 
+      "caption": "Code Delivery", "command": "codedelivery"
     },
-     { "caption": "Composer",
+    { "caption": "Composer",
        "children": [
        	{ "command": "composer", "caption": "Install" , "args": { "config": "install"}}, 
     	{ "command": "composer", "caption": "Update"  , "args": { "config": "update"}  }]
