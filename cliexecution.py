@@ -6,6 +6,6 @@ class cliexecutionCommand(sublime_plugin.TextCommand):
 			sublime.message_dialog(fichier_cli + ' is not a cli')
 		elif (config == 'default' or sublime.ok_cancel_dialog('Please confirm ' + config +' execution of '+fichier_cli)):
 			drive       = fichier_cli.split(":", 1)[0]
-			gipsi_path  = fichier_cli.split("cli\\", 1)[0]+"cli"
+			cliBat      = fichier_cli.split("cli\\", 1)[0]+"batch"
 			phpFile     = fichier_cli.split("cli\\", 1)[1]
-			os.system(drive+": & cd  "+gipsi_path+" & start php.exe -c ../php.ini "+phpFile+" --email=0 --config="+config + " --pause=true")
+			os.system(drive+": & cd "+cliBat+ "& cli.bat ..\\cli\\"+phpFile+" "+config)
