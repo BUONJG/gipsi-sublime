@@ -8,4 +8,4 @@ class cliexecutionCommand(sublime_plugin.TextCommand):
 			drive       = fichier_cli.split(":", 1)[0]
 			cliBat      = fichier_cli.split("cli\\", 1)[0]+"batch"
 			phpFile     = fichier_cli.split("cli\\", 1)[1]
-			os.system(drive+": & cd "+cliBat+ "& cli.bat ..\\cli\\"+phpFile+" "+config)
+			os.system(drive+": & cd "+cliBat+ "& start cli.bat ..\\cli\\"+phpFile+" "+config)
